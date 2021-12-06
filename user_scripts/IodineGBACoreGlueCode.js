@@ -114,7 +114,7 @@ var games = {
     "pacman_world":"Pacman World",
     "pacman_world2":"Pacman World 2",
     "pokemonflorasky":"Pokemon Flora Sky Rom Hack",
-    "cloud_white_v2":"cloud white v2",
+    "cloud_white_2":"cloud white v2",
     "advanced_v2":"pokemon advanced v2",
     "pokemonemerald":"Pokemon Emerald",
     "pokemonek":"Pokemon Emerald (Kaizo Mod)",
