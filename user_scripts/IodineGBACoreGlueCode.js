@@ -115,7 +115,7 @@ var games = {
     "pacman_world2":"Pacman World 2",
     "pokemonflorasky":"Pokemon Flora Sky Rom Hack",
     "emerald_multiplayer":"pokemon emerald plus",
-    "Emerald_Extreme_Rom":"pokemon extreme rom",
+    "Emerald_Extreme_Rom":"Emerald Extreme Rom",
     "emerald_randomizer":"emerald randomizer",
     "emerald_extreme_randomizer":"pokemon_exreme_randomizer",
     "pokemonemerald":"Pokemon Emerald",
