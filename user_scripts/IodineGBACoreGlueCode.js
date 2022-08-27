@@ -184,7 +184,8 @@ var games = {
     "ynfa":"Yggdra Union - We'll Never Fight Alone",
     "zelda_past":"The Legend of Zelda: A Link to the Past",
     "zelda_minish":"The Legend of Zelda: The Minish Cap",
-    "Aero the Acrobat - Rascal Rival Revenge":"Aero the Acrobat - Rascal Rival Revenge"
+    "Aero the Acrobat - Rascal Rival Revenge":"Aero the Acrobat - Rascal Rival Revenge",
+    "AH":"Alien Hominid"
 };
 var Iodine = null;
 var Blitter = null;
