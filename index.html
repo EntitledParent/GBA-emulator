@@ -3,7 +3,6 @@
     <head>
 	    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS49ZXBGRW"></script>
-<script src="/user_scripts/abcloak.js"></script> 
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -22,7 +21,22 @@
         <label>
           About Blank toggle (Audio does not work with about blank) NOTE: CLOSE THE OTHER WINDOW FOR THE GAME TO START!
         </label>
-          <input type="checkbox" id="abtog" onchange="toggleCheck();" checked>
+          <input type="checkbox" id="abtog" oninput="toggleCheck()">
+          <script>
+            let test = 1;
+function toggleCheck() {
+    if(document.getElementById("abtog").checked === true){
+    test = 2;
+    localStorage.setItem("testItem", JSON.stringify(test));
+    console.log("checked");
+    }
+    else{
+        test = 1;
+        localStorage.setItem("testItem", JSON.stringify(test));
+        console.log("unchecked");
+    }
+}
+          </script>
         
         
         <h2>Select a game:</h2>
@@ -323,6 +337,6 @@
     <h2>Fixed up a bit by Cattn, ahmet and others. More games added by cattn, and more to come! </h2>
     <h2>New Additions by Nailington#0747</h2>
     </body>
-    
+    <script src="/user_scripts/abcloak.js"></script> 
 </html>
 	    
