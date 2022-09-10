@@ -18,7 +18,15 @@ function setFindGameName() {
     if (gameTypeID == 1) {
         gameName = 'data/roms/PokemonSaph.gba';
     } // Your code will go below this line
-
+    if (gameTypeID == 2) {
+        gameName = '../Binaries/007.gba';
+    }
+    if (gameTypeID == 3) {
+        gameName = '../Binaries/0994.gba';
+    }
+    if (gameTypeID == 4) {
+        gameName = '../Binaries/advancewars.gba';
+    }
 
 
 
