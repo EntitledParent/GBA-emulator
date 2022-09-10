@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>EmulatorJS</title>
+        <title>Emulator</title>
 
         <link rel = icon href = docs/favicon.ico sizes = "16x16 32x32 48x48 64x64" type = image/vnd.microsoft.icon>
         <meta name = viewport content = "width = device-width, initial-scale = 1">
@@ -20,20 +20,61 @@
                 background-color: #222;
                 color: white;
             }
+            html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(49, 49, 49);
+}
+span {
+    color: blue;
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    display: none;
+    font-size: 40pt;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: bottom;
+    font-family: monospace;
+    display:none;
+}
+@media (any-pointer: coarse) {
+    span {
+        padding: .8em;
+    }
+}
+
         </style>
     </head>
     
     <body>
-        <h1> GBA Games </h1>
+        <h1> GBA Roms </h1>
         <p><a href="launchpad.html" onclick="gameType(1);">Pokemon Sapphire</a></p>
         <p><a href="launchpad.html" onclick="gameType(2);">007 - Everything Or Nothing</a></p>
         <p><a href="launchpad.html" onclick="gameType(3);">Naurto Game (Eurasia)</a></p>
         <p><a href="launchpad.html" onclick="gameType(4);">Advancewars</a></p>
+        
+        <h1>NES</h1>
+        
+        <h1>SNES</h1>
+
+        <h1>N64</h1>
         <p><a href="launchpad.html" onclick="gameType(3501);">Super Mario Kart 64</a></p>
+
+        <h1>G@meboy</h1>
         <p><a href="launchpad.html" onclick="gameType(4501);">Tetris (GB)</a></p>
+
+        <h1>Atari5200</h1>
         <p><a href="launchpad.html" onclick="gameType(6001);">Galaxian USA</a></p>
+
+        <h1>DS</h1>
         <p><a href="launchpad.html" onclick="gameType(7001);">Dragon Quest Hero's Rocket Slime</a></p>
+
+        <h1>PS1</h1>
         <p><a href="launchpad.html" onclick="gameType(8001);">Gran Turismo</a></p>
+
         <p><a href="testlaunch.html">click this to upload game files</a></p>
     </body>
     <script src="data/js/type.js"></script>

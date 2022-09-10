@@ -26,8 +26,3 @@ span {
     font-family: monospace;
     display:none;
 }
-@media (any-pointer: coarse) {
-    span {
-        padding: .8em;
-    }
-}

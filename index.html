@@ -4,6 +4,7 @@
 	   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EWLVXK992"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -21,12 +22,12 @@
   gtag('config', 'G-PS49ZXBGRW');
 </script>
         <link rel="shortcut icon" href="Binaries/gb.ico">
-        <title>GBA Games</title>
+        <title>GBA Emulator</title>
         <meta charset="UTF-8">
     </head> 
-    <body style="background:rgb(200, 200, 200);">
+    <body>
         <h1>Welcome to the GBA Emulator</h1>
-        <img src="Binaries/gba.png" alt="GBA Logo">
+        <img class="logo" src="Binaries/gba.png" alt="GBA Logo">
         <br>
         <label>
           About Blank toggle (Audio does not work with about blank) NOTE: CLOSE THE OTHER WINDOW FOR THE GAME TO START!
@@ -47,10 +48,31 @@ function toggleCheck() {
     }
 }
           </script>
+        <style>
+            main {
+              border:5px red solid; 
+              border-radius:25px; 
+              background:rgb(200, 200, 200);
+              padding-left:20px;
+            }
+          body {
+            background:rgb(200, 200, 200);
+          }
+          @media (max-width: 750px) {
+          html {
+         padding: .8em;
+         text-align: center;
+         line-height: 30px;
+          }      
+          .logo {
+            display: none;
+          }
+      }
+        </style>
         
-        
-        <h2>Select a game:</h2>
-        <main style="border:5px red solid; border-radius:25px; background:rgb(200, 200, 200);padding-left:20px;">
+        <h2>Select a rom:</h2>
+        <p>We use the word "Rom" instead of g@me to lower detection.</p>
+        <main>
           <h2>Nailington's Additions</h2>
           <u1>
             <!--One underscore is equivalent to one space ( )
@@ -142,7 +164,7 @@ function toggleCheck() {
             <li><a href="./launcher.html#Wade_Hixton's_Counter_Punch_(USA,_Europe)">Wade Hixton's Counter Punch (USA, Europe)</a></li>
             <li><a href="./launcher.html#Yu-Gi-Oh!__The_Eternal_Duelist_Soul_(U)_[!]">Yu-Gi-Oh! - The Eternal Duelist Soul (U) [!]</a></li>
           </u1>
-            <h3>Main Games</h3>
+            <h3>Main Roms</h3>
             <ul>
                           <li><a href="./launcher.html#007">007 - Everything Or Nothing</a></li>
               <li><a href="./launcher.html#advancewars">Advance Wars</a></li>
@@ -325,12 +347,12 @@ function toggleCheck() {
               <li><a href="./launcher.html#zelda_past">The Legend of Zelda: A Link to the Past</a></li>
               <li><a href="./launcher.html#zelda_minish">The Legend of Zelda: The Minish Cap</a></li>
           </ul>
-              <h3>Gameboy Game Collections</h3>
+              <h3>Gameboy Rom Collections</h3>
           <ul>
               <li><a href="./launcher.html#pokemongb">The Pokemon Collection</a></li>
               <li><a href="./launcher.html#marioland">The Mario Land Collection</a></li>
           </ul>
-              <h3>NES Game Collections</h3>
+              <h3>NES Rom Collections</h3>
           <ul>
               <li><a href="./launcher.html#nesgh1">NES Greatest Hits 1</a></li>
           </ul>
@@ -338,7 +360,6 @@ function toggleCheck() {
           <ul>
               <li><a href="emulatorjs/index.html">New Emulator (Beta)</a></li>
           </ul>
-		  
 		   <h3>Featured Sites using this page!</h3>
        <p>Please note that only Math Study links are directly owned by Math Study, other links are not controlled by us. If you have an issue, please contact us in our discord.</p>
           <ul>
@@ -353,9 +374,7 @@ function toggleCheck() {
           			  
             </ul>
         </main>
-      <h2>For Info On: Game Collections, Controls, And Some Other Cool Stuff. Check Out The Wiki: <a href="https://github.com/Browncha023/GBA/wiki" target="_blank"><img src="Binaries/here.png" alt="here"></a></h2>
-    <h2>Fixed up a bit by Cattn, ahmet and others. More games added by cattn, and more to come! </h2>
-    <h2>New Additions by Nailington#0747</h2>
+    <h3>Re-designed, Changed Emulator, and more by Cattn + Nailington#0747</h2>
     </body>
     <script src="/user_scripts/abcloak.js"></script> 
 </html>
