@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EmulatorJS</title>
+
+        <link rel = icon href = docs/favicon.ico sizes = "16x16 32x32 48x48 64x64" type = image/vnd.microsoft.icon>
+        <meta name = viewport content = "width = device-width, initial-scale = 1">
+
+        <style>
+            body, html {
+                height: 100%;
+            }
+
+            body {
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 20px;
+                margin: 0;
+                background-color: #222
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style='width:1200px;height:500px;max-width:100%;'>
+            <div id='game'></div>
+        </div>
+        <script src="data/js/type.js"></script>
+    <script src="data/js/loadtype.js"></script>
+        <script type='text/javascript'>
+        
+            EJS_player = '#game';
+            EJS_core = gameCoreType;
+        
+            // URL to Bios file
+        
+            EJS_biosUrl = gameName;
+            
+            // URL to Game rom
+             
+            EJS_gameUrl = gameName;
+            
+            /*
+             *  Path to the WASM / JS files
+             *  HAS TO BE in the same directory.
+             */
+            
+            EJS_pathtodata = 'data/';
+            
+        </script>
+        <script src='data/loader.js'></script>
+        
+    </body>
+    
+</html>
