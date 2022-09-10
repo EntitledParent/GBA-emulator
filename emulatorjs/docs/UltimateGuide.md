@@ -1,15 +1,15 @@
-## How to add games. the ultimate guide! (Made at 12:30AM by cattn)
+## How to add games. the ultimate guide! (Made at 12:30AM by cattn Re-Made Later)
 
 ### Step 1
-Upload your rom to data/roms/
+Upload your rom to emulatorjs/data/roms/
 
 ### Step 2
 Fill in this sample code and add to index.html
 
 ```html
-<p><a href="launchpad.html" onclick="gameTypeID = x; gameType();">Your Game Name Here</a></p>
+<p><a href="launchpad.html" onclick="gameType(x);">Your Game Name Here</a></p>
 ```
-Replace the letter x in gameTypeID = x; with a ID that corresponds with the game you are uploading. Here is a chart:
+Replace the letter x in gameType(x) with a ID that corresponds with the game you are uploading. Here is a chart:
 ```
  1 - 1000 = GBA
  1001 - 2000 = NES
@@ -20,34 +20,23 @@ Replace the letter x in gameTypeID = x; with a ID that corresponds with the game
  7001 - 8000 = DS
  8001 - 9000 = PS1
  ```
-Each game MUST have a unique ID.
+Each game MUST have a unique ID. Please include 1 in gba, 1001 in nes, etc.
+Also, please make sure to start from the beginning of the ranges and count up. Do not skip.
 Then fill in your Game Name
 
 ### Step 3
-Navigate to data/js/loadtype.js. Scroll down to Line 17 to the function "setFindGameName()"
+Navigate to emulatorjs/data/js/loadgame folder, and find the one that corresponds with the game you are trying to add.
 
-Fill in the sample code below
-
+Next, navigate to line 8 on any of them, and then put in your game according to the example below.
 ```js
-if (gameTypeID == x) {
-        gameName = 'data/roms/yourfile.extension';
-    }
- ```
- 
- Replace x with the ID you assigned your game earlier, then replace yourfile.extension with the file name+extension you uploaded to the roms folder
+['data/roms/PokemonSaph.gba', // First ID
+'../Binaries/007.gba', // place in order from first ID // Second ID
+'../Binaries/0994.gba', // Third ID
 
-Then, paste this code right after ``}`` from the last ID statement.
 
-Example:
-
-```js
- if (gameTypeID == 1) {
-        gameName = 'data/roms/PokemonSaph.gba';
-    }
-    if (gameTypeID == 2) {
-        gameName = 'data/roms/PokemonEm.gba';
-    }
+]
 ```
-(Two different games were added above)
+Just use a linebreak, and add the path to the file 'Path/to/Filename', <--- Make sure to have the comma
 
-## Then you are finished! Submit a pull request
+File extension is needed, also do not start the path with a /, just start with data/roms/
+## Then you are finished! Submit a pull request. Thanks for helping out!
