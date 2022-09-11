@@ -25,7 +25,6 @@ if (currentTheme) {
 }
 
 
-
 function searchBar() {
     // Declare variables
     const warning = document.getElementsByClassName("warning")[0];
