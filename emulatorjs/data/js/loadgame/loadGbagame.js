@@ -5,7 +5,8 @@ gameTypeID = JSON.parse(savedGameTypeID);
 
 function setGbaGameName() {
 const gameNameTypeID = 
-['data/roms/PokemonSaph.gba', 
+['data/roms/PokemonSaph.gba',
+'../Binaries/007.gba',
 '../Binaries/advancewars.gba',
 '../Binaries/advancewars2.gba',
 '../Binaries/adventure-blue-chapter-b1.1.gba',
@@ -301,7 +302,6 @@ const gameNameTypeID =
 '../Binaries/sonic_advance.gba',
 '../Binaries/sonic_advance2.gba',
 '../Binaries/sonic_advance3.gba',
-'../Binaries/Spider-Man__Mysterios_Menace_(U)_[!].gba',
 '../Binaries/Spyro_3__Attack_of_the_Rhynocs.gba',
 '../Binaries/spyro_adventure.gba',
 '../Binaries/spyro_flame.gba',

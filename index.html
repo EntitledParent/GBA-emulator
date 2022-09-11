@@ -12,13 +12,20 @@
   gtag('config', 'G-PS49ZXBGRW');
 </script>
         <link rel="shortcut icon" href="Binaries/gb.ico">
-        <title>GBA Emulator</title>
+        <link rel="stylesheet" href="user_css/index.css">
+        <title>GBA Games</title>
         <meta charset="UTF-8">
     </head> 
+    <nav>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+      <p class="buttext">Switch Theme</p>
+    </div></nav>
     <body>
         <h1>Welcome to the GBA Emulator</h1>
-        <img class="logo" src="Binaries/gba.png" alt="GBA Logo">
-        <br>
         <label>
           About Blank toggle (Audio does not work with about blank) NOTE: CLOSE THE OTHER WINDOW FOR THE GAME TO START!
         </label>
@@ -39,33 +46,15 @@ function toggleCheck() {
 }
           </script>
           <h3>THANK YOU TO LATEBAT for helping contribute to our up-and-coming emulator update! Go check out his page (It's cool) <a href="https://latebat.me/" target="_blank">Here!</a></h3>
-        <style>
-            main {
-              border:5px red solid; 
-              border-radius:25px; 
-              background:rgb(200, 200, 200);
-              padding-left:20px;
-            }
-          body {
-            background:rgb(200, 200, 200);
-          }
-          @media (max-width: 750px) {
-          html {
-         padding: .8em;
-         text-align: center;
-         line-height: 30px;
-          }      
-          .logo {
-            display: none;
-          }
-      }
-        </style>
         
-        <h2>Select a rom:</h2>
-        <p>We use the word "Rom" instead of g@me to lower detection.</p>
+        <h2>Select a Game:</h2>
+        <a class="smalltxt" href="#bottom1234">Or skip to bottom</a>
         <main>
-          <h2>Nailington's Additions</h2>
-          <u1>
+          <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input class="input-search" type="text" id="search1" onkeyup="searchBar()" placeholder="Search for games..">
+          </div>
+          <u1 id="searchGames">
             <!--One underscore is equivalent to one space ( )
                 Two underscroes are equivalent to a hyphen with a space on both sides ( - ) -->
             <li><a href="./launcher.html#Aero_the_Acrobat__Rascal_Rival_Revenge">Aero the Acrobat - Rascal Rival Revenge</a></li>
@@ -154,9 +143,6 @@ function toggleCheck() {
             <li><a href="./launcher.html#Virtua_Tennis_(U)">Virtua Tennis (U)</a></li>
             <li><a href="./launcher.html#Wade_Hixton's_Counter_Punch_(USA,_Europe)">Wade Hixton's Counter Punch (USA, Europe)</a></li>
             <li><a href="./launcher.html#Yu-Gi-Oh!__The_Eternal_Duelist_Soul_(U)_[!]">Yu-Gi-Oh! - The Eternal Duelist Soul (U) [!]</a></li>
-          </u1>
-            <h3>Main Roms</h3>
-            <ul>
                           <li><a href="./launcher.html#007">007 - Everything Or Nothing</a></li>
               <li><a href="./launcher.html#advancewars">Advance Wars</a></li>
               <li><a href="./launcher.html#advancewars2">Advance Wars 2</a></li>
@@ -338,18 +324,19 @@ function toggleCheck() {
               <li><a href="./launcher.html#zelda_past">The Legend of Zelda: A Link to the Past</a></li>
               <li><a href="./launcher.html#zelda_minish">The Legend of Zelda: The Minish Cap</a></li>
           </ul>
+          <p class="warning">No search Results found</p>
               <h3>Gameboy Rom Collections</h3>
           <ul>
-              <li><a href="./launcher.html#pokemongb">The Pokemon Collection</a></li>
-              <li><a href="./launcher.html#marioland">The Mario Land Collection</a></li>
+              <a href="./launcher.html#pokemongb">The Pokemon Collection</a></li>
+              <a href="./launcher.html#marioland">The Mario Land Collection</a></li>
           </ul>
               <h3>NES Rom Collections</h3>
           <ul>
-              <li><a href="./launcher.html#nesgh1">NES Greatest Hits 1</a></li>
+              <a href="./launcher.html#nesgh1">NES Greatest Hits 1</a></li>
           </ul>
           <h3>Experimental Emulator</h3>
           <ul>
-              <li><a href="emulatorjs/index.html">New Emulator (Beta)</a></li>
+              <a id="bottom1234" href="emulatorjs/index.html">New Emulator (Beta)</a></li>
           </ul>
 		   <h3>Featured Sites using this page!</h3>
        <p>Please note that only Math Study links are directly owned by Math Study, other links are not controlled by us. If you have an issue, please contact us in our discord.</p>
@@ -366,7 +353,7 @@ function toggleCheck() {
             </ul>
         </main>
     <h3>Re-designed, Changed Emulator, and more by Cattn + Nailington#0747</h2>
-    </body>
-    <script src="/user_scripts/abcloak.js"></script> 
+    </body> 
+    <script src="user_scripts/theme.js"></script>
 </html>
 	    
