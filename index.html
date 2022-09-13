@@ -30,10 +30,10 @@
     </div></nav>
     <body>
         <h2>Welcome to the GBA Emulator</h2>
-        <label>
+        <label id="abtoggledsc">
           About Blank toggle (Audio does not work with about blank) NOTE: CLOSE THE OTHER WINDOW FOR THE GAME TO START!
         </label>
-          <input type="checkbox" id="abtog" oninput="toggleCheck()">
+          <input aria-labelledby="abtoggledsc" type="checkbox" id="abtog" oninput="toggleCheck()">
           <script>
             let test = 1;
 function toggleCheck() {
@@ -55,10 +55,10 @@ function toggleCheck() {
         <a class="smalltxt" href="#bottom1234">Or skip to bottom</a>
         <main>
           <div class="search-box">
-            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <button aria-labelledby="search1" class="btn-search"><i class="fas fa-search"></i></button>
             <input class="input-search" type="text" id="search1" onkeyup="searchBar()" placeholder="Search for games..">
           </div>
-          <u1 id="searchGames">
+          <ul id="searchGames">
             <!--One underscore is equivalent to one space ( )
                 Two underscroes are equivalent to a hyphen with a space on both sides ( - ) -->
             <li><a href="./launcher.html#Aero_the_Acrobat__Rascal_Rival_Revenge">Aero the Acrobat - Rascal Rival Revenge</a></li>
