@@ -53,7 +53,7 @@ function findGameType() {
     }
     if (gameTypeID > 8000 && gameTypeID < 9001) {
         gameCoreType = 'psx';
-        setPsxGameName();
+        checkUserRam();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
 
