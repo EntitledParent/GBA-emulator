@@ -18,7 +18,7 @@
         color: var(--heading-color);
     }
     main {
-        border:5px red solid; 
+        border:5px var(--main-border-color) solid; 
         border-radius:25px; 
         background: var(--background-color);
             }
