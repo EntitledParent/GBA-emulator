@@ -72,7 +72,7 @@
             align-items: center;
           }
             .buttext {
-              background-color: var(--secondary-color);
+              background-color: black;
               margin-left: 10px;
               font-size: 20px;
               border-radius: 20px;
