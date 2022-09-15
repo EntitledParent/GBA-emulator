@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: rgb(200, 200, 200);
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #5956b5;
+    --secondary-color: #646a7a;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+
+[data-theme="pink"] {
+    --primary-color: #ab31ab;
+    --secondary-color: #78226d;
+    --font-color: #913d9e;
+    --bg-color: #d99acd;
+    --heading-color: #cb55b9;
+}
+
+
+.light-theme-container {
+    background-color: rgb(200, 200, 200);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.light-theme-content {
+    color: #292922;
+}
+
+
+.dark-theme-container {
+    background-color: #161625;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.dark-theme-content {
+    color: #818cab;
+}
+
+.pink-theme-container {
+    background-color: #d99acd;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.pink-theme-content {
+    color: #cb55b9;
+}
