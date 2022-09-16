@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #6360cd;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: rgb(200, 200, 200);
+    --heading-color: #292922;
+    --gradiant-color: linear-gradient(90deg, #532222 0%, #712020 100%);
+    --main-border-color: red;
+}
+
+[data-theme="dark"] {
+    --primary-color: #5956b5;
+    --secondary-color: #646a7a;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+    --gradiant-color: linear-gradient(90deg, #5c0404 0%, #5c2424 100%);
+    --main-border-color: #091585;
+}
+
+[data-theme="pink"] {
+    --primary-color: #456ece;
+    --secondary-color: #262278;
+    --font-color: #b15699;
+    --bg-color: #d99acd;
+    --heading-color: #4f78c4;
+    --gradiant-color: linear-gradient(90deg, #891574 0%, #70265c 100%);
+    --main-border-color: #548ca9;
+}
+
+
+.light-theme-container {
+    background-color: rgb(200, 200, 200);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.light-theme-content {
+    color: #292922;
+}
+
+
+.dark-theme-container {
+    background-color: #161625;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.dark-theme-content {
+    color: #818cab;
+}
+
+.pink-theme-container {
+    background-color: #d99acd;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.pink-theme-content {
+    color: #cb55b9;
+}
+
+
+.collapsible-theme {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible-theme:hover {
+    background-color: rgb(177, 82, 82);
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .custom-theme-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+  }

@@ -1,29 +1,24 @@
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const toggleState = 1;
 
-function switchTheme(e) {
-    if (e.target.checked) {
+function themeValue(toggleState) {
+    if (toggleState == 1) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+    if (toggleState == 2) {
         document.documentElement.setAttribute('data-theme', 'dark');
+      
       localStorage.setItem('theme', 'dark');
     }
-    else {
-        document.documentElement.setAttribute('data-theme', 'light');
+    if (toggleState == 3) {
+        document.documentElement.setAttribute('data-theme', 'pink');
       
-      localStorage.setItem('theme', 'light');
-    }    
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
-
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
+      localStorage.setItem('theme', 'pink');
     }
 }
 
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+document.documentElement.setAttribute('data-theme', currentTheme);
 
 function searchBar() {
     // Declare variables
@@ -56,4 +51,17 @@ function searchBar() {
 
 
 
+    var coll = document.getElementsByClassName("collapsible-theme");
+    var FL113;
     
+    for (FL113 = 0; FL113 < coll.length; FL113++) {
+      coll[FL113].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
