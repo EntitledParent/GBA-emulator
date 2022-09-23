@@ -1,6 +1,11 @@
 var gameTypeID = 0;
+var gameSetText = null;
 
 function gameType(gameTypeID) {
     localStorage.setItem("gameTypeID", JSON.stringify(gameTypeID));
-    console.log("Got game ID: " + gameTypeID);
+}
+
+function setNameTxt(clickedElement) {
+    gameSetText = clickedElement.textContent;
+    localStorage.setItem("gameSetText", JSON.stringify(gameSetText));
 }

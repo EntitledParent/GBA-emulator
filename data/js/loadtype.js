@@ -60,3 +60,11 @@ function findGameType() {
 }
 findGameType();
 
+
+function setPageTitle() {
+    getLocalTextVal = localStorage.getItem("gameSetText");
+    gameSetText = JSON.parse(getLocalTextVal);
+    document.title = gameSetText;
+} // omg title has set!!!!
+setPageTitle();
+
