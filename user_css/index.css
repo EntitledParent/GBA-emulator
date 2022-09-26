@@ -277,3 +277,16 @@
               background: rgba(51,51,51,0.7);
               z-index: 10;
           }
+
+  #favorite-bar-text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #favorite-bar-text p {
+    margin: 10px;
+    display: inline-block;
+  }
