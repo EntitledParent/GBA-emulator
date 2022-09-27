@@ -14,12 +14,6 @@ function setContentForBar() {
 }
 setContentForBar();
 
-function gameStarSelected() {
-    doTheySetFav = 1;
-    localStorage.setItem("doTheyFav", JSON.stringify(doTheySetFav));
-    }
-
-
 function setFavs() {
     let doTheyFavDat = localStorage.getItem("doTheyFav");
     let doTheyFav = JSON.parse(doTheyFavDat)
@@ -42,8 +36,7 @@ function setFavs() {
         const createGameTypeNode = document.createTextNode("Game type: " + gameType);
 
         createGameLinkBar.appendChild(linkNode);
-        createGameLinkBar.href = "launchpad.html";
-        //createLink.onclick = saveFavorite(gameID);
+        createGameLinkBar.href = "launchpad.html?gameID=" + gameID + "&gametitle=" + title + "&fav=true";
 
         const barNode = document.createTextNode(title);
         createGameNameBar.appendChild(barNode);
