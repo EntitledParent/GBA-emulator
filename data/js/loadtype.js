@@ -56,6 +56,11 @@ function findGameType() {
         checkUserRam();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
+    if (gameTypeID > 9000 && gameTypeID < 10001) {
+        gameCoreType = 'segaMD';
+        setSegaMDGameName();
+        localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
+    }
 
 }
 findGameType();

@@ -32,14 +32,12 @@
           <li><a href="update.html" data-bubble="Changes And">The Old Emulator</a></li> 
           <li><a href="settings.html" data-bubble="Updated!">Settings</a></li>
           <li><a href="nes.html" data-bubble="600+!">NEW NES GAMES!</a></li>
+          <li><a href="segaMD.html" data-bubble="SEGA!!!">Sega Genesis/Mega Drive</a></li>
         </ul>
         <main>
           <div class="search-box">
             <button aria-labelledby="search1" class="btn-search"><i class="fas fa-search"></i></button>
             <input class="input-search" type="text" id="search1" onkeyup="searchBar()" placeholder="Search for games..">
-          </div>
-          <div class="filter-bar">
-            <p>Filter by: <button class="button-62"><a href="#" onclick="typeCheck(1);"><b>GBA</b></a></button> <button class="button-62" onclick="typeCheck(2);"><a href="#"><b>NES</b></a></button> <button class="button-62" onclick="typeCheck(3);"><a href="#"><b>SNES</b></a></button> <button class="button-62" onclick="typeCheck(4);"><a href="#"><b>N64</b></a></button> <button class="button-62" onclick="typeCheck(5);"><a href="#"><b>GB</b></a></button> <button class="button-62" onclick="typeCheck(6);"><a href="#"><b>Atari5200</b></a></button> <button class="button-62"><a href="#" onclick="typeCheck(7);"><b>DS</b></a></button> <button class="button-62" onclick="typeCheck(8);"><a href="#"><b>PS1</b></a></button> <button class="button-62"><a href="#" onclick="typeCheck(0);"><b>Reset</b></a></button></p>
           </div>
           <ul id="searchGames">
             <p class="warning"></p>
@@ -406,24 +404,6 @@
           <li class="gba-filter-hide"><a href="launchpad.html" onclick="gameType(360); setNameTxt(this);">zelda_past</a></li>
           <li class="gba-filter-hide"><a href="launchpad.html" onclick="gameType(361); setNameTxt(this);">007</a></li>
       
-      <h1 class="nes-filter-hide">NES</h1>
-      <li class="nes-filter-hide"><a href="nes.html">600+ NES GAMES!</a></li>
-      <h1 class="snes-filter-hide">SNES</h1>
-      <p class="snes-filter-hide">None yet, check back later...</p>
-      <h1 class="n64-filter-hide">N64</h1>
-      <li class="n64-filter-hide"><a href="launchpad.html" onclick="gameType(3501); setNameTxt(this);">Super Mario Kart 64</a></li>
-
-      <h1 class="gb-filter-hide">G@meboy</h1>
-      <li class="gb-filter-hide"><a href="launchpad.html" onclick="gameType(4501); setNameTxt(this);">Tetris (GB)</a></li>
-
-      <h1 class="atari-filter-hide">Atari5200</h1>
-      <li class="atari-filter-hide"><a href="launchpad.html" onclick="gameType(6001); setNameTxt(this);">Galaxian USA</a></li>
-
-      <h1 class="ds-filter-hide">DS</h1>
-      <li class="ds-filter-hide"><a href="launchpad.html" onclick="gameType(7001); setNameTxt(this);">Dragon Quest Hero's Rocket Slime</a></li>
-
-      <h1 class="ps1-filter-hide">PS1</h1>
-      <p class="ps1-filter-hide">None yet, check back later...</p>
       
       
  </ul>
