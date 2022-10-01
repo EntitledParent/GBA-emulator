@@ -11,6 +11,7 @@ let biosName = "null";
 // 6001 - 7000 = Atari 5200
 // 7001 - 8000 = DS
 // 8001 - 9000 = PS1
+// 9001 - 10000 = Sega MD
 
 savedGameTypeID = localStorage.getItem("gameTypeID");
 gameTypeID = JSON.parse(savedGameTypeID);
