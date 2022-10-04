@@ -1,9 +1,13 @@
 savedGameTypeID = localStorage.getItem("gameTypeID");
 gameTypeID = JSON.parse(savedGameTypeID);
 
+
+// space pt 0 
+
+
 function setAltGba() {
     const gameNameTypeID = 
-    ['https://cattn.github.io/gba-host/gba-alt/PokemonSaph.zip',
+    ['https://cattn.github.io/gba-host/gba-alt/pokemonsapphire.zip',
     'https://cattn.github.io/gba-host/gba-alt/0994.zip',
     'https://cattn.github.io/gba-host/gba-alt/advancewars.zip',
     'https://cattn.github.io/gba-host/gba-alt/advancewars2.zip',
@@ -378,7 +382,7 @@ function setAltGba() {
     
     gameName = getGameNameFromAr;
     }
-        // space! !1 1!
+        // space! !1 1! pt 1
 
 
 
