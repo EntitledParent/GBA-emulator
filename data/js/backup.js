@@ -1,5 +1,5 @@
 fetch('http://endpoint.i10.repl.co/nes-alt/Abadox.nes.zip', {mode: 'no-cors'}).then(r=>{
-    console.log("Server OK");
+  console.log("Server OK.");
   })
   .catch(e=>{
     serverOffline();
@@ -9,7 +9,7 @@ fetch('http://endpoint.i10.repl.co/nes-alt/Abadox.nes.zip', {mode: 'no-cors'}).t
 
 function serverOffline() {
     let serverStatus = 1;
-    alert("The main server is blocked, or offline. Loading alternative server...");
+    alert("The main server is blocked, or offline. Loading alternative server (BETA FEATURE STILL IN DEV STAGE)...");
     localStorage.setItem("serverStat", JSON.stringify(serverStatus));
     console.log(serverStatus);
 }

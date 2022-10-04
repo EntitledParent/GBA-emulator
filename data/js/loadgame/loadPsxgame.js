@@ -27,6 +27,13 @@ function checkUserRam() {
     window.location.href = "index.html";
   }
   if (ram > 6) {
-    setPsxGameName();
+    if (serverStat == 0) {
+      setPsxGameName();
+    }
+  else if (serverStat == 1) {
+    setAltPsx();
+    serverStat = 0;
+    localStorage.setItem("serverStat", JSON.stringify(serverStat));    
   }
+}
 }

@@ -6,7 +6,7 @@ gameTypeID = JSON.parse(savedGameTypeID);
 function setGbaGameName() {
 const gameNameTypeID = 
 ['data/roms/PokemonSaph.gba',
-'Binaries/007.gba',
+'Binaries/0994.gba',
 'Binaries/advancewars.gba',
 'Binaries/advancewars2.gba',
 'Binaries/adventure-blue-chapter-b1.1.gba',
@@ -365,7 +365,7 @@ const gameNameTypeID =
 'Binaries/Yu-Gi-Oh!__The_Eternal_Duelist_Soul_(U)_[!].gba',
 'Binaries/zelda_minish.gba',
 'Binaries/zelda_past.gba',
-'Binaries/0994.gba',
+'Binaries/007.gba',
 
 
 
