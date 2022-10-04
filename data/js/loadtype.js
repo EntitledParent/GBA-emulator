@@ -12,54 +12,119 @@ let biosName = "null";
 // 7001 - 8000 = DS
 // 8001 - 9000 = PS1
 // 9001 - 10000 = Sega MD
-
+serverItem = localStorage.getItem("serverStat");
+serverStat = JSON.parse(serverItem);
 savedGameTypeID = localStorage.getItem("gameTypeID");
 gameTypeID = JSON.parse(savedGameTypeID);
 
 function findGameType() {
     if (gameTypeID > 0 && gameTypeID < 1001) {
         gameCoreType = 'gba';
+        if (serverStat == 0) {
         setGbaGameName();
+        }
+        else if (serverStat == 1) {
+        altServerLoad();
+serverStat = 0;
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+        }
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 1000 && gameTypeID < 2001) {
         gameCoreType = 'nes';
+        if (serverStat == 0) {
         setNesGameName();
+    }
+    else if (serverStat == 1) {
+        altServerLoad();
+serverStat = 0;
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+        }
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 2000 && gameTypeID < 3501) {
         gameCoreType = 'snes';
-        setSnesGameName()
+        if (serverStat == 0) {
+        setSnesGameName();
+    }
+    else if (serverStat == 1) {
+        altServerLoad();
+serverStat = 0;
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+        }
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 3500 && gameTypeID < 4501) {
         gameCoreType = 'n64';
+        if (serverStat == 0) {
         setN64GameName();
+    }
+    else if (serverStat == 1) {
+        altServerLoad();
+serverStat = 0;
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+        }
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 4500 && gameTypeID < 6001) {
         gameCoreType = 'gb';
+        if (serverStat == 0) {
         setGbGameName();
+    }
+    else if (serverStat == 1) {
+        altServerLoad();
+serverStat = 0;
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+        }
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 6000 && gameTypeID < 7001) {
         gameCoreType = 'atari5200';
+        if (serverStat == 0) {
         setAtari52GameName();
+    }
+    else if (serverStat == 1) {
+        altServerLoad();
+serverStat = 0;
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+        }
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 7000 && gameTypeID < 8001) {
         gameCoreType = 'nds';
+        if (serverStat == 0) {
         setNdsGameName();
+    }
+    else if (serverStat == 1) {
+        altServerLoad();
+serverStat = 0;
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+        }
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 8000 && gameTypeID < 9001) {
         gameCoreType = 'psx';
+        if (serverStat == 0) {
         checkUserRam();
+    }
+    else if (serverStat == 1) {
+        altServerLoad();
+serverStat = 0;
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+        }
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
     if (gameTypeID > 9000 && gameTypeID < 10001) {
         gameCoreType = 'segaMD';
+        if (serverStat == 0) {
         setSegaMDGameName();
+    }
+    else if (serverStat == 1) {
+        altServerLoad();
+serverStat = 0;
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+localStorage.setItem("serverStat", JSON.stringify(serverStat));
+        }
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
 
