@@ -27,6 +27,6 @@ function checkUserRam() {
     window.location.href = "index.html";
   }
   if (ram > 6) {
-    setPsxGameName();
+    setPsxGameName(); 
   }
 }

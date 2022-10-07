@@ -73,4 +73,3 @@ function setPageTitle() {
     document.title = gameSetText;
 } // omg title has set!!!!
 setPageTitle();
-
