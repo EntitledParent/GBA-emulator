@@ -21,6 +21,7 @@ GameBoyAdvanceSaves.prototype.initialize = function () {
     this.EEPROMChip = new GameBoyAdvanceEEPROMChip(this.cartridge.IOCore);
     this.currentChip = this.UNDETERMINED;
     this.referenceSave(this.saveType);
+    //console.log(this.EEPROMChip);
 }
 GameBoyAdvanceSaves.prototype.referenceSave = function (saveType) {
     saveType = saveType | 0;
