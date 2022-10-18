@@ -9,7 +9,7 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: #5956b5;
+    --primary-color: #5391a8;
     --secondary-color: #646a7a;
     --font-color: #e1e1ff;
     --bg-color: #161625;
@@ -64,6 +64,15 @@
     background-color: #d99acd;
     padding: 20px;
     border-radius: 20px;
+}
+.swap-settings-container {
+    background-color: #161625;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.swap-settings-content {
+    color: #818cab;
 }
 
 .pink-theme-content {

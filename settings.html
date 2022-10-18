@@ -25,7 +25,7 @@
     </head> 
     <nav> 
         <div class="wrappers">
-        <p class="main-div main-div2"><a href="settings.html">Switch Theme</a></p>
+        <p class="main-div main-div2"><a href="settings.html">Settings!</a></p>
         <p class="main-div main-div2"><a href="index_beta.html">Saved Games</a></p>
         <p class="main-div main-div2"><a href="https://discord.gg/nZrabh4cgH">Want more games?</a></p>
       </div>
@@ -38,9 +38,21 @@
         </ul>
         <h1>Settings</h1>
         <main>
-             
-
-            <h2>Themes</h3>
+             <h1> Provider </h1>
+            <div class="swap-settings-container">
+                <h3 class="swap-settings-content">Use Default hosting provider (replit.co)?</h3>
+                <div class="toggle-button-cover">
+                    <div class="button-cover">
+                      <div class="button r" id="button-1">
+                        <input id="swapSet" type="checkbox" class="checkbox" onclick="buttonProvid();" />
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <br>
+            <h1>Themes</h1>
             <div class="theme-container">
             <div class="light-theme-container">
                 <h3 class="light-theme-content"><a href="#" onclick="themeValue(1);"> Light Theme </a></h3>
@@ -57,7 +69,6 @@
             <div class="green-theme-container">
                 <h3 class="green-theme-content"><a onclick="themeValue(4);"> Green Theme - Made by Nailington </a></h3>
             </div>
-
             <button type="button" class="collapsible-theme">Custom Theme Picker</button>
             <div class="custom-theme-content">
             <p>Color Picker: Coming soon...</p>
@@ -70,5 +81,6 @@
         </main>
     </body> 
     <script src="user_scripts/theme.js"></script>
+    <script src="data/js/swap.js"></script>
 </html>
 	    
