@@ -70,3 +70,12 @@ function searchBar() {
         }
       });
     }
+
+    function buttonLoad() {
+      let isCheckdata = localStorage.getItem("isCheck");
+      isCheck = JSON.parse(isCheckdata);
+      if (isCheck == 1) {
+      document.getElementById("swapSet").checked = true;
+      }
+  }
+  buttonLoad();
