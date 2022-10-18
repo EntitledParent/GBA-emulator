@@ -79,3 +79,27 @@ function searchBar() {
       }
   }
   buttonLoad();
+function button1Load() {
+  let is1Checkdata = localStorage.getItem("is1Check");
+  is1Check = JSON.parse(is1Checkdata);
+  if (is1Check == 1) {
+    document.getElementById("swapSet1").checked = true;
+  }
+}
+button1Load();
+let useCust = false;
+
+function getCustInput() {
+  
+  if (is1Check == 1) {
+    let custInput = document.getElementById("customHost").value;
+    useCust = true;
+    localStorage.setItem("custHost", JSON.stringify(custInput));
+    localStorage.setItem("useCust", JSON.stringify(useCust));
+
+  }
+  if (is1Check == 0) {
+    useCust = false;
+    localStorage.setItem("useCust", JSON.stringify(useCust));
+  }
+ }
