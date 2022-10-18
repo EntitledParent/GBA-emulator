@@ -66,7 +66,7 @@
     border-radius: 20px;
 }
 .swap-settings-container {
-    background-color: #161625;
+    background-color: var(--bg-color);
     padding: 20px;
     border-radius: 20px;
 }
