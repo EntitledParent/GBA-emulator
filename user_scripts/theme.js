@@ -20,6 +20,11 @@ function themeValue(toggleState) {
 
     localStorage.setItem('theme', 'green');
   }
+  if (toggleState == 5) {
+    document.documentElement.setAttribute('data-theme', 'dark-green');
+
+  localStorage.setItem('theme', 'dark-green');
+}
 }
 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
@@ -53,7 +58,18 @@ function searchBar() {
     }
 
 
+    function activateCHost() {
 
+      if (is1Check == 0) {
+        is1Check = 1;
+        localStorage.setItem("is1Check", JSON.stringify(is1Check));
+      } else {
+      is1Check = 0;
+      localStorage.setItem("is1Check", JSON.stringify(is1Check));
+    }
+    
+    console.log(is1Check);
+    }
 
 
     var coll = document.getElementsByClassName("collapsible-theme");
@@ -79,3 +95,27 @@ function searchBar() {
       }
   }
   buttonLoad();
+function button1Load() {
+  let is1Checkdata = localStorage.getItem("is1Check");
+  is1Check = JSON.parse(is1Checkdata);
+  if (is1Check == 1) {
+    document.getElementById("swapSet1").checked = true;
+  }
+}
+button1Load();
+let useCust = false;
+
+function getCustInput() {
+  
+  if (is1Check == 1) {
+    let custInput = document.getElementById("customHost").value;
+    useCust = true;
+    localStorage.setItem("custHost", JSON.stringify(custInput));
+    localStorage.setItem("useCust", JSON.stringify(useCust));
+
+  }
+  if (is1Check == 0) {
+    useCust = false;
+    localStorage.setItem("useCust", JSON.stringify(useCust));
+  }
+ }

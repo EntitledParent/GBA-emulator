@@ -816,27 +816,27 @@ a.button-frame.frame-three:hover:after{
 
 /* Button 1 */
 #button-1 .knobs:before {
-  content: "YES";
+  content: "REPL";
   position: absolute;
   top: 4px;
   left: 4px;
-  width: 20px;
+  width: 23px;
   height: 10px;
   color: #fff;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
   text-align: center;
   line-height: 1;
   padding: 9px 4px;
-  background-color: #03a9f4;
+  background-color: #f4a803;
   border-radius: 50%;
   transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
 
 #button-1 .checkbox:checked + .knobs:before {
-  content: "NO";
+  content: "GIT";
   left: 42px;
-  background-color: #f44336;
+  background-color: #0051ca;
 }
 
 #button-1 .checkbox:checked ~ .layer {
@@ -847,4 +847,238 @@ a.button-frame.frame-three:hover:after{
 #button-1 .knobs:before,
 #button-1 .layer {
   transition: 0.3s ease all;
+}
+
+
+.button-cover1 {
+  text-align: center;
+}
+
+
+.button-cover1,
+.knobs1,
+.layer1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button1 {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+.button.r1,
+.button.r1 .layer1 {
+  border-radius: 100px;
+}
+
+.button1.r1 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs1 {
+  z-index: 2;
+}
+
+.layer1 {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+/* Button 1 */
+#button-2 .knobs1:before {
+  content: "OFF";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 23px;
+  height: 10px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #d04b41;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-2 .checkbox:checked + .knobs1:before {
+  content: "ON";
+  left: 42px;
+  background-color: #458d46;
+}
+
+#button-2 .checkbox:checked ~ .layer1 {
+  background-color: #fcebeb;
+}
+
+#button-2 .knobs1,
+#button-2 .knobs1:before,
+#button-2 .layer1 {
+  transition: 0.3s ease all;
+}
+
+.small-tex {
+  font-size: 12px;
+}
+
+:root {
+	--omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+	--omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+	--omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+	--omrs-color-interaction: #1e4bd1;
+	--omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+	--omrs-color-danger: #b50706;
+	--omrs-color-bg-low-contrast: #eff1f2;
+	--omrs-color-ink-high-contrast: #121212;
+	--omrs-color-bg-high-contrast: #ffffff;
+	
+}
+/** END: Non Openmrs CSS **/
+div.omrs-input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20.4375rem;
+  display: relative;
+}
+.omrs-input-helper {
+  color: white !important;
+}
+.omrs-wrapper-g {
+  display: inline-block;
+}
+
+/* Input*/
+.omrs-input-underlined > input,
+.omrs-input-filled > input {
+	border: none;
+	border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+	width: 100%;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+	outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 147.6%;
+	color: var(--omrs-color-ink-medium-contrast);
+	transition: top .2s;
+}
+
+.omrs-input-underlined > svg,
+.omrs-input-filled > svg {
+	position: absolute;
+	top: 0.9375rem;
+	right: 0.875rem;
+	fill: var(--omrs-color-ink-medium-contrast);
+}
+
+.omrs-input-underlined > .omrs-input-helper,
+.omrs-input-filled > .omrs-input-helper {
+	font-size: 0.9375rem;
+	color: var(--omrs-color-ink-medium-contrast);
+	letter-spacing: 0.0275rem;
+	margin: 0.125rem 0.875rem;
+}
+
+.omrs-input-underlined > input:hover,
+.omrs-input-filled > input:hover {
+	background: var(--omrs-color-interaction-minus-two);
+	border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus + .omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
+	color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus {
+	border-color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus ~ svg,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus ~ svg {
+	fill: var(--omrs-color-ink-high-contrast);
+}
+
+/** DISABLED **/
+
+.omrs-input-underlined > input:disabled {
+	background: var(--omrs-color-bg-low-contrast);
+	cursor: not-allowed;
+}
+
+.omrs-input-underlined > input:disabled + .omrs-input-label,
+.omrs-input-underlined > input:disabled ~ .omrs-input-helper{
+	color: var(--omrs-color-ink-low-contrast);
+}
+
+.omrs-input-underlined > input:disabled ~ svg {
+	fill: var(--omrs-color-ink-low-contrast);
+}
+
+
+/** DANGER **/
+
+.omrs-input-underlined.omrs-input-danger > .omrs-input-label, .omrs-input-underlined.omrs-input-danger > .omrs-input-helper,
+.omrs-input-filled.omrs-input-danger > .omrs-input-label, .omrs-input-filled.omrs-input-danger > .omrs-input-helper{
+	color: var(--omrs-color-danger);
+}
+
+.omrs-input-danger > svg {
+	fill: var(--omrs-color-danger);
+}
+
+.omrs-input-danger > input {
+	border-color: var(--omrs-color-danger);
+}
+
+.omrs-input-underlined > input {
+	background: var(--omrs-color-bg-high-contrast);
+}
+.omrs-input-filled > input {
+	background: var(--omrs-color-bg-low-contrast);
 }
