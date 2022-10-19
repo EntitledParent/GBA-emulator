@@ -20,6 +20,11 @@ function themeValue(toggleState) {
 
     localStorage.setItem('theme', 'green');
   }
+  if (toggleState == 5) {
+    document.documentElement.setAttribute('data-theme', 'dark-green');
+
+  localStorage.setItem('theme', 'dark-green');
+}
 }
 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;

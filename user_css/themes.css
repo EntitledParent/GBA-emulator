@@ -38,6 +38,16 @@
     --main-border-color: #a9eb4c;
 }
 
+[data-theme="dark-green"] {
+    --primary-color: #3b6b3b;
+    --secondary-color: #306e33;
+    --font-color: #1f702f;
+    --bg-color: #1c3d28;
+    --heading-color: #3c9c3a;
+    --gradiant-color: linear-gradient(90deg, #15894f 0%, #26703f 100%);
+    --main-border-color: #377e40;
+}
+
 
 .light-theme-container {
     background-color: rgb(200, 200, 200);
@@ -88,6 +98,15 @@
 .green-theme-content {
     color: #096d08;
 }
+.dark-green-theme-container {
+    background-color: #1c3d28;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.dark-green-theme-content {
+    color: #096d08;
+}
 
 .collapsible-theme {
     background-color: var(--primary-color);
@@ -99,11 +118,12 @@
     text-align: center;
     outline: none;
     font-size: 15px;
+    border-radius: 20px;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible-theme:hover {
-    background-color: rgb(177, 82, 82);
+    background-color: var(--secondary-color);
   }
   
   /* Style the collapsible content. Note: hidden by default */
@@ -112,4 +132,6 @@
     display: none;
     overflow: hidden;
     background-color: var(--secondary-color);
+    border-radius: 20px;
+    color: var(--bg-color)
   }
