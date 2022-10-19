@@ -58,7 +58,18 @@ function searchBar() {
     }
 
 
+    function activateCHost() {
 
+      if (is1Check == 0) {
+        is1Check = 1;
+        localStorage.setItem("is1Check", JSON.stringify(is1Check));
+      } else {
+      is1Check = 0;
+      localStorage.setItem("is1Check", JSON.stringify(is1Check));
+    }
+    
+    console.log(is1Check);
+    }
 
 
     var coll = document.getElementsByClassName("collapsible-theme");
