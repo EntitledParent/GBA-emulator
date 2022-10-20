@@ -1,7 +1,57 @@
 @import url('https://fonts.cdnfonts.com/css/baloo-da');
 
+:root {
+    --primary-color: #3D8DAF;
+    --secondary-color: #824242;
+    --font-color: #424242;
+    --bg-color: #C8C8C8;
+    --heading-color: #292922;
+    --gradiant-color: linear-gradient(90deg, #532222 0%, #712020 100%);
+    --main-border-color: red;
+}
+
+[data-theme="dark"] {
+    --primary-color: #5391a8;
+    --secondary-color: #824242;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+    --gradiant-color: linear-gradient(90deg, #5c0404 0%, #5c2424 100%);
+    --main-border-color: #091585;
+}
+
+[data-theme="pink"] {
+    --primary-color: #3D2B71;
+    --secondary-color: #2D7128;
+    --font-color: #b15699;
+    --bg-color: #d99acd;
+    --heading-color: #4f78c4;
+    --gradiant-color: linear-gradient(90deg, #891574 0%, #70265c 100%);
+    --main-border-color: #548ca9;
+}
+
+[data-theme="green"] {
+    --primary-color: #2A6F96;
+    --secondary-color: #712C22;
+    --font-color: #063810;
+    --bg-color: #06b44e;
+    --heading-color: #096d08;
+    --gradiant-color: linear-gradient(90deg, #15894f 0%, #26703f 100%);
+    --main-border-color: #a9eb4c;
+}
+
+[data-theme="dark-green"] {
+    --primary-color: #3b6b3b;
+    --secondary-color: #306e33;
+    --font-color: #1f702f;
+    --bg-color: #1c3d28;
+    --heading-color: #3c9c3a;
+    --gradiant-color: linear-gradient(90deg, #15894f 0%, #26703f 100%);
+    --main-border-color: #377e40;
+}
+
 html {
-    background-color: #C8C8C8;
+  background-color: var(--bg-color);
 }
 .svg-settings {
     height: 30px;
@@ -77,7 +127,7 @@ padding: 10px;
     height: 75px;
     width: 874px;
 
-    background: #824242;
+    background: var(--secondary-color);
     border: 3px solid #000000;
     box-shadow: 10px 9px 4px 5px rgba(10, 5, 75, 0.25);
     float: center;
@@ -103,13 +153,13 @@ a {
 .sidebar-1 {
     width: 246px;
     height: 100%;
-    background: #3D8DAF;
+    background: var(--primary-color);
 }
 
 .sidebar-2 {
     width: 246px;
     height: 100%;
-    background: #3D8DAF;
+    background: var(--primary-color);
 }
 
 .align-prop {
