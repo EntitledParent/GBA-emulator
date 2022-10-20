@@ -50,33 +50,28 @@ function buttonProvid() {
     }
     let ischeckDatas = localStorage.getItem("is1Check");
     is1Check = JSON.parse(ischeckDatas);
-    function activateCHost() {
-
-        if (is1Check == 0) {
-          is1Check = 1;
-          localStorage.setItem("is1Check", JSON.stringify(is1Check));
-        } else {
-        is1Check = 0;
-        localStorage.setItem("is1Check", JSON.stringify(is1Check));
-      }
-      
-      console.log(is1Check);
-      }
    
 let useCustDat = localStorage.getItem("useCust");
 useCust = JSON.parse(useCustDat);
 let custHostDat = localStorage.getItem("custHost");
 let custHost = JSON.parse(custHostDat);
 let custType = 0;
+let custTypedat = localStorage.getItem("custType");
+custType = JSON.parse(custTypedat);
 
 if (useCust == true) {
     if (gameCoreType == "gba") {
         custType = 1;
+        localStorage.setItem("custType", JSON.stringify(custType));
     }
     if (gameCoreType == "nes"){
         custType = 2;
+        localStorage.setItem("custType", JSON.stringify(custType));
     }
    
+} else if (useCust == false) {
+    custType = 0;
+    localStorage.setItem("custType", JSON.stringify(custType));
 }
 
 if (custType == 1) {
