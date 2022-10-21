@@ -233,8 +233,8 @@ color: #FFFFFF;
 }
 
 .gba-emu-tile {
-    width: 260px;
-    height: 138px;
+    width: 600px;
+    height: 70px;
     background: #6BA263;
     border: 3px solid #000000;
 }
@@ -245,19 +245,20 @@ color: #FFFFFF;
 
 
 .nes-emu-tile {
-    width: 260px;
-    height: 138px;
+    width: 600px;
+    height: 70px;
     background: #B54C4C;
     border: 3px solid #000000;
 }
 
 
-.wrapper-tile {
-    display: flex;
+.wrapper-tile-1 {
     float: center;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-left: 27%;
+    margin-bottom: 1%;
 }
 
 .tile-text {
@@ -267,13 +268,10 @@ font-weight: 700;
 font-size: 32px;
 text-align: center;
 color: #000000;
--ms-transform: translateY(80%);
-transform: translateY(80%);
 text-decoration: underline;
 }
 
 .display-wrapper-1 .gba-tile-wrap {
-    float: left;
 
     clear: none;
 }
@@ -284,8 +282,8 @@ text-decoration: underline;
 }
 
 .gba-emu-tile-1 {
-    width: 260px;
-    height: 138px;
+    width: 600px;
+    height: 70px;
     background: #6BA263;
     border: 3px solid #000000;
     filter: drop-shadow(8px 10px 4px rgba(1, 77, 9, 0.25));
@@ -297,8 +295,8 @@ text-decoration: underline;
 
 
 .nes-emu-tile {
-    width: 260px;
-    height: 138px;
+    width: 600px;
+    height: 70px;
     background: #B54C4C;
     border: 3px solid #000000;
     filter: drop-shadow(8px 10px 4px rgba(126, 13, 13, 0.25));
@@ -306,24 +304,28 @@ text-decoration: underline;
 }
 
 .sega-emu-tile-1 {
-    width: 260px;
-    height: 138px;
+    width: 600px;
+    height: 70px;
     background: #6480AB;
     border: 3px solid #000000;
     filter: drop-shadow(8px 10px 4px rgba(14, 35, 107, 0.25));
 }
 
 .more-emu-tile {
-    width: 260px;
-    height: 138px;
+    width: 600px;
+    height: 70px;
     background: #BACF64;
     border: 3px solid #000000;  
     filter: drop-shadow(8px 10px 4px rgba(136, 138, 22, 0.25));
 }
 
 
-.wrapper-tile-1 {
-
+.wrapper-tile {
+    float: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 27%;
 }
 
 .tile-text-1 {
@@ -333,16 +335,15 @@ font-weight: 700;
 font-size: 32px;
 text-align: center;
 color: #000000;
--ms-transform: translateY(80%);
-transform: translateY(80%);
 text-decoration: underline;
 }
 
 .center-please {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    padding-left: 50px;
+    padding: 20px;
+    float: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -399,8 +400,8 @@ text-decoration: underline;
     padding: 10px;
     }
     .gba-emu-tile-1 {
-        width: 150px;
-        height: 60px;
+        width: 350px;
+        height: 40px;
         background: #6BA263;
         border: 3px solid #000000;
         filter: drop-shadow(8px 10px 4px rgba(1, 77, 9, 0.25));
@@ -408,8 +409,8 @@ text-decoration: underline;
     
     
     .nes-emu-tile {
-        width: 150px;
-        height: 60px;
+        width: 350px;
+        height: 40px;
         background: #B54C4C;
         border: 3px solid #000000;
         filter: drop-shadow(8px 10px 4px rgba(126, 13, 13, 0.25));
@@ -417,24 +418,24 @@ text-decoration: underline;
     }
     
     .sega-emu-tile-1 {
-        width: 150px;
-        height: 60px;
+        width: 350px;
+        height: 40px;
         background: #6480AB;
         border: 3px solid #000000;
         filter: drop-shadow(8px 10px 4px rgba(14, 35, 107, 0.25));
     }
     
     .more-emu-tile {
-        width: 150px;
-        height: 60px;
+        width: 350px;
+        height: 40px;
         background: #BACF64;
         border: 3px solid #000000; 
         filter: drop-shadow(8px 10px 4px rgba(136, 138, 22, 0.25)); 
     }
 
     .gba-emu-tile {
-        width: 150px;
-        height: 60px;
+        width: 350px;
+        height: 40px;
         background: #6BA263;
         border: 3px solid #000000;
         filter: drop-shadow(8px 10px 4px rgba(1, 77, 9, 0.25));
@@ -442,8 +443,8 @@ text-decoration: underline;
     
     
     .nes-emu-tile {
-        width: 150px;
-        height: 60px;
+        width: 350px;
+        height: 40px;
         background: #B54C4C;
         border: 3px solid #000000;
         filter: drop-shadow(8px 10px 4px rgba(126, 13, 13, 0.25));
@@ -456,8 +457,6 @@ text-decoration: underline;
     font-size: 18px;
     text-align: center;
     color: #000000;
-    -ms-transform: translateY(35%);
-    transform: translateY(35%);
     text-decoration: underline;
     }
     .tile-text {
@@ -467,8 +466,21 @@ text-decoration: underline;
     font-size: 18px;
     text-align: center;
     color: #000000;
-    -ms-transform: translateY(35%);
-    transform: translateY(35%);
     text-decoration: underline;
+    }
+    .wrapper-tile {
+        float: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 8%;
+    }
+    .wrapper-tile-1 {
+        float: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 8%;
+        margin-bottom: 3%;
     }
   }
