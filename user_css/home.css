@@ -149,6 +149,7 @@ padding: 10px;
 
 a {
     text-decoration: none;
+    color: var(--bg-color);
 }
 
 .sidebar-1 {
