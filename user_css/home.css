@@ -194,7 +194,7 @@ font-size: 48px;
 text-align: center;
 text-decoration-line: underline;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--bg-color);
 }
 
 .side-text {
@@ -207,12 +207,14 @@ font-size: 36px;
 text-align: center;
 text-decoration-line: underline;
 
-color: #000900;
+color: var(--bg-color);
 }
 
 .github-logo {
     height: 60px;
     width: 60px;
+    color: black;
+    filter: drop-shadow(8px 10px 4px rgba(1, 77, 9, 0.25));
 }
 
 .github-text {
@@ -225,7 +227,7 @@ padding: 2px;
 
 text-align: center;
 
-color: #FFFFFF;
+color: var(--bg-color);
 
 }
 
@@ -366,7 +368,7 @@ text-decoration: underline;
     text-align: center;
     text-decoration-line: underline;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--bg-color)
     }
     .setting-nav {
         display: flex;
