@@ -25,6 +25,26 @@ function themeValue(toggleState) {
 
   localStorage.setItem('theme', 'dark-green');
 }
+if (toggleState == 6) {
+  document.documentElement.setAttribute('data-theme', 'black-white');
+
+localStorage.setItem('theme', 'black-white');
+}
+if (toggleState == 7) {
+  document.documentElement.setAttribute('data-theme', 'blue-pink');
+
+localStorage.setItem('theme', 'blue-pink');
+}
+if (toggleState == 8) {
+  document.documentElement.setAttribute('data-theme', 'charcoal-yellow');
+
+localStorage.setItem('theme', 'charcoal-yellow');
+}
+if (toggleState == 9) {
+  document.documentElement.setAttribute('data-theme', 'hotpink-cyan');
+
+localStorage.setItem('theme', 'hotpink-cyan');
+}
 }
 
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
