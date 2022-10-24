@@ -1,19 +1,6 @@
 let isCheck = 0;
 let is1Check = 0;
 
-function buttonProvid() {
-    let isCheckdata = localStorage.getItem("isCheck");
-    isCheck = JSON.parse(isCheckdata);
-   
-    if (isCheck == 0) {
-        isCheck = 1;
-    } else {
-    isCheck = 0;
-    }
-    localStorage.setItem("isCheck", JSON.stringify(isCheck));
-}
-
-
     let gameTextDat = localStorage.getItem("gameSetText");
     let gameText = JSON.parse(gameTextDat);
     let isCheckdata = localStorage.getItem("isCheck");

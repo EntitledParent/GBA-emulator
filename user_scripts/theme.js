@@ -139,3 +139,15 @@ function getCustInput() {
     localStorage.setItem("useCust", JSON.stringify(useCust));
   }
  }
+
+ function buttonProvid() {
+  let isCheckdata = localStorage.getItem("isCheck");
+  let isCheck = JSON.parse(isCheckdata);
+ 
+  if (isCheck == 0) {
+      isCheck = 1;
+  } else {
+  isCheck = 0;
+  }
+  localStorage.setItem("isCheck", JSON.stringify(isCheck));
+}
