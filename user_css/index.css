@@ -1,4 +1,4 @@
-
+@import url('https://fonts.cdnfonts.com/css/baloo-da');
 *{
     transition-duration: 0.4s;
    }
@@ -18,8 +18,7 @@
         color: var(--heading-color);
     }
     main {
-        border:5px var(--main-border-color) solid; 
-        border-radius:25px; 
+       
         background: var(--background-color);
             }
         html {
@@ -36,7 +35,9 @@
         padding: 10px;
     }
     ul {
-        list-style-position: initial;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
 @media (max-width: 750px) {
@@ -47,9 +48,6 @@
           }      
         }
 
-          a {
-            color: var(--primary-color); 
-          }
 
 
 
@@ -1081,4 +1079,24 @@ div.omrs-input-group {
 }
 .omrs-input-filled > input {
 	background: var(--omrs-color-bg-low-contrast);
+}
+
+
+.gba-filter-hide {
+  height: 40px;
+  background: var(--secondary-color);
+  border-radius: 18px;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+
+.bar-text {
+  color: var(--font-color) !important;
+  font-family: 'Baloo Da' !important;
+  font-size: 26px !important;
+}
+
+a {
+  color: var(--primary-color);
 }
