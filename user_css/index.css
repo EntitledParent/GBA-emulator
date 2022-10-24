@@ -1083,7 +1083,7 @@ div.omrs-input-group {
 
 
 .gba-filter-hide {
-  height: 40px;
+  height: 25px;
   background: var(--secondary-color);
   border-radius: 18px;
   justify-content: center;
@@ -1095,6 +1095,7 @@ div.omrs-input-group {
   color: var(--font-color) !important;
   font-family: 'Baloo Da' !important;
   font-size: 26px !important;
+  margin-bottom: 5px;
 }
 
 a {

@@ -43,7 +43,15 @@
             <p class="warning"></p>
 
         <h1>Sega Genesis/Mega Drive</h1>
-        <li class="gba-filter-hide"><p><a class="bar-text" href="launchpad.html" onclick="gameType(9001); setNameTxt(this);">Ecco the Dolphin</a></p></li>
+        <button type="button" style="border-radius: 20px; color: #ffffff; background-color: #3e1687;" class="collapsible-theme">Saved Games</button>
+          <div>
+            <div id="favorite-bar-text"></div>
+            <a href="index_beta.html" class="bar-text">Manage Saves</a>
+            <p> Tip! favorite a game by opening a game, and clicking the favorite button. </p>
+          </div>
+          <br>
+          <br>
+        <li class="gba-filter-hide"><a class="bar-text" href="launchpad.html" onclick="gameType(9001); setNameTxt(this);">Ecco the Dolphin</a></li>
         
         
    </ul>
@@ -58,11 +66,12 @@
           <p><a href="https://sites.google.com/view/sp-gxmes">SP Launcher</a></p>
           <p><a href="https://sites.google.com/view/artclass-site">Art Class</a></p>
           <p> Want your site link here? If you use this in your site, contact Catt#5172, and we can partner!</p>
-              
+          <input type="checkbox" id="swapSet" style="display: none;" />
         
        </main>
    <a href="testlaunch.html">click this to upload game files</a>
   </body>
     <script src="data/js/type.js"></script>
     <script src="user_scripts/theme.js"></script>
+    <script src="data/js/favorite.js"></script>
 </html>
