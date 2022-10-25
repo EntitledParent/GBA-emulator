@@ -13,7 +13,7 @@ const gameNameTypeID =
 ]
 
 function returnLast(arr) {
-    return arr.at(gameTypeID - 9001);
+    return arr.at(gameTypeID - 10001);
   }
 const getGameNameFromAr = returnLast(gameNameTypeID);
 
