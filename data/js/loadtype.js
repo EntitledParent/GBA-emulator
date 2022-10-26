@@ -47,17 +47,17 @@ function findGameType() {
         setAtari52GameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
-    if (gameTypeID > 7000 && gameTypeID < 8001) {
+    if (gameTypeID > 7000 && gameTypeID < 9001) {
         gameCoreType = 'nds';
         setNdsGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
-    if (gameTypeID > 8000 && gameTypeID < 9001) {
+    if (gameTypeID > 9000 && gameTypeID < 10001) {
         gameCoreType = 'psx';
         checkUserRam();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
     }
-    if (gameTypeID > 9000 && gameTypeID < 10001) {
+    if (gameTypeID > 10000 && gameTypeID < 11001) {
         gameCoreType = 'segaMD';
         setSegaMDGameName();
         localStorage.setItem("gameCoreType", JSON.stringify(gameCoreType));
