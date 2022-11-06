@@ -43,7 +43,7 @@
         "name":"GBA Emulator",
         "url":"/gba.html",
         "description":"Our GBA games"
-    }
+    },
     {
         "name":"NES Emulator",
         "url":"/nes.html",
