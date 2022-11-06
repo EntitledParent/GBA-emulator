@@ -1,26 +1,48 @@
 {
-  "background_color": "#ffffff",
-  "description": "Free, online GBA Emulator with over 300+ Games available Immediately! GitHub GBA Game website.",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "GBA Emulator",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "cattn.gba",
-  "start_url": "/",
-  "theme_color": "#ffffff",
-  "categories": [
-    "education",
-    "personalization",
-    "productivity",
-    "utilities"
-  ],
-  "icons": [
+"name": "MSG Retro Emulator",
+"short_name": "MSG Emulator",
+"start_url": "https://cattn.github.io/gba/",
+"display": "standalone",
+"description": "An emulator provided by the folks at MSG! We have a wide variety of retro games for you to enjoy, with more being added regularly!",
+"lang": "en-US",
+"dir": "auto",
+"theme_color": "#c8c8c8",
+"background_color": "#c8c8c8",
+"orientation": "any",
+"icons": [
     {
-      "src": "Binaries/gb.ico",
-      "type": "image/vnd.microsoft.icon",
-      "sizes": "16x16 32x32 48x48 64x64"
+        "src": "https://www.pwabuilder.com/assets/icons/icon_512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+    },
+    {
+        "src": "https://www.pwabuilder.com/assets/icons/icon_192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
     }
-  ],
-  "lang": "en"
+],
+"screenshots": [
+    {
+        "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+        "sizes": "2880x1800",
+        "type": "image/png",
+        "description": "A screenshot of the home page"
+    }
+],
+"related_applications": [
+    {
+        "platform":"windows",
+        "url": " The URL to your app in that app store"
+    }
+],
+"prefer_related_applications": "false",
+"shortcuts": [
+    {
+        "name":"The name you would like to be displayed for your shortcut",
+        "url":"The url you would like to open when the user chooses this shortcut. This must be a URL local to your PWA. For example: If my start_url is /, this URL must be something like /shortcut",
+        "description":"A description of the functionality of this shortcut"
+    }
+]
 }
