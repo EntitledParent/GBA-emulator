@@ -6,11 +6,12 @@
 <title>GBA Games</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
-<meta name="description" content= "Free, online GBA Emulator with over 300+ Games available Immediately! GitHub GBA Game website." />
+<meta name="description" content= "Free, online GBA Emulator with over 300+ Games available Immediately! GitHub GBA Game website.">
 <meta name="robots" content= "index, follow">
 <meta name="keywords" content="gba, games, unblocked, play, free, gameboy, advance, emulator, roms, rom">
 <link rel = "stylesheet" href = "user_css/themes.css">
         <link rel = icon href = Binaries/gb.ico sizes = "16x16 32x32 48x48 64x64" type = image/vnd.microsoft.icon>
+        <link rel = apple-touch-icon href = pwa/apple-icon-180.png sizes = "16x16 32x32 48x48 64x64">
         <meta name = viewport content = "width = device-width, initial-scale = 1">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS49ZXBGRW"></script>
@@ -21,8 +22,17 @@
 
   gtag('config', 'G-PS49ZXBGRW');
 </script>
+<!-- PWA --> 
+<link rel="manifest" href="manifest.webmanifest">
+</head>
+
 <body>
-    </head> 
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  
     <nav>
         <div class="align-prop">
             <div class="sidebar-1">
@@ -47,7 +57,7 @@
                 <p class="center-main side-text"><a href="gba.html"> 7 Consoles </a></p>
 
                 <div class="github-box center-main">
-                    <a class="github-text" href="https://github.com/catt/gba">View on</a> <img src="data/assets/GitHub-Mark-Light-64px.png" alt="GitHub Logo" class="github-logo">
+                    <a class="github-text" href="https://github.com/cattn/gba">View on</a> <img src="data/assets/GitHub-Mark-Light-64px.png" alt="GitHub Logo" class="github-logo">
                 </div>
             </div>
             
