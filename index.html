@@ -23,13 +23,13 @@
   gtag('config', 'G-PS49ZXBGRW');
 </script>
 <!-- PWA --> 
-<link rel="manifest" href="manifest.webmanifest">
+<link rel="manifest" href="pwa/manifest.json">
 </head>
 
 <body>
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
+      navigator.serviceWorker.register('pwa/service-worker.js')
     }
   </script>
   
