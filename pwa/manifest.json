@@ -37,7 +37,6 @@
         "url": " The URL to your app in that app store"
     }
 ],
-"prefer_related_applications": "false",
 "shortcuts": [
     {
         "name":"GBA Emulator",
