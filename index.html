@@ -23,14 +23,20 @@
   gtag('config', 'G-PS49ZXBGRW');
 </script>
 <!-- PWA --> 
-<script>navigator.serviceWorker.register("pwa/service-worker.js")</script> 
-<link rel="manifest" href="pwa/manifest.json">
+<script>navigator.serviceWorker.register("service-worker.js")</script>  
+<script type="module">
+  import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+  const el = document.createElement('pwa-update');
+  document.body.appendChild(el);
+</script>
+<link rel="manifest" href="manifest.json">
+
 </head>
 
 <body>
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('pwa/service-worker.js')
+      navigator.serviceWorker.register('service-worker.js')
     }
   </script>
   
