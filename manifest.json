@@ -31,12 +31,7 @@
         "description": "A screenshot of the home page"
     }
 ],
-"related_applications": [
-    {
-        "platform":"windows",
-        "url": " The URL to your app in that app store"
-    }
-],
+"related_applications": [],
 "shortcuts": [
     {
         "name":"GBA Emulator",
@@ -48,5 +43,14 @@
         "url":"/nes.html",
         "description":"Our NES games"
     }
-]
+],
+"categories": [
+    "education",
+    "games",
+    "kids",
+    "lifestyle",
+    "productivity"
+  ]
+
+
 }
