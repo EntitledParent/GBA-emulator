@@ -116,13 +116,13 @@ self.addEventListener("fetch", (event) => {
   if (event.request.mode === "navigate") {
     event.respondWith(
       (async () => {
-        // try {
-        //   // First, try to use the navigation preload response if it's
-        //   // supported.
-        //   const preloadResponse = await event.preloadResponse;
-        //   if (preloadResponse) {
-        //     return preloadResponse;
-        //   }
+        try {
+          // First, try to use the navigation preload response if it's
+          // supported.
+          const preloadResponse = await event.preloadResponse;
+          if (preloadResponse) {
+            return preloadResponse;
+          }
 
           // Always try the network first.
           const networkResponse = await fetch(event.request);
