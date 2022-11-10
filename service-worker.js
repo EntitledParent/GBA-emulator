@@ -80,6 +80,9 @@ const OFFLINE_VERSION = 1;
 const CACHE_NAME = "offline";
 // Customize this with a different URL if needed.
 const OFFLINE_URL = "offline.html";
+const OFFLINE_CSS1 = "user_css/index.css";
+const OFFLINE_CSS2 = "user_css/main.css";
+const OFFLINE_CSS3 = "user_css/themes.css";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -89,6 +92,9 @@ self.addEventListener("install", (event) => {
       // response isn't fulfilled from the HTTP cache; i.e., it will be
       // from the network.
       await cache.add(new Request(OFFLINE_URL, { cache: "reload" }));
+      await cache.add(new Request(OFFLINE_CSS1, { cache: "reload" }));
+      await cache.add(new Request(OFFLINE_CSS2, { cache: "reload" }));
+      await cache.add(new Request(OFFLINE_CSS3, { cache: "reload" }));
     })()
   );
   // Force the waiting service worker to become the active service worker.
