@@ -366,6 +366,7 @@ const gameNameTypeID =
 'Binaries/zelda_minish.gba',
 'Binaries/zelda_past.gba',
 'Binaries/007.gba',
+'Binaries/Pokemon_Emerald_Rogue_EX_(v1.2.1).gba',
 
 
 
