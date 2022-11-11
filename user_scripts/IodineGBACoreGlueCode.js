@@ -3,7 +3,7 @@
 var games = {
     "007":"007 - Everything Or Nothing",
     "0994":"0994",
-    "Zadvancewars":"Advance Wars",
+    "advancewars":"Advance Wars",
     "advancewars2":"Advance Wars 2",
     "aladdin":"Aladdin",
     "alienhominid":"Alien Hominid",
