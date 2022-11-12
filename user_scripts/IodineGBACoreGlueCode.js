@@ -310,7 +310,7 @@ function registerBIOS() {
 function downloadROM(gamename) {
     Iodine.pause();
     showTempString("Downloading \"" + games[gamename] + ".\"");
-    downloadFile("Binaries/" + gamename + ".gba", registerROM);
+    downloadFile("../gba-host/gba-alt/" + gamename + ".gba", registerROM);
 }
 function registerROM() {
     clearTempString();
