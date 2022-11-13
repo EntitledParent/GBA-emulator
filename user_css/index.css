@@ -814,7 +814,7 @@ a.button-frame.frame-three:hover:after{
 
 /* Button 1 */
 #button-1 .knobs:before {
-  content: "REPL";
+  content: "GIT";
   position: absolute;
   top: 4px;
   left: 4px;
@@ -832,7 +832,7 @@ a.button-frame.frame-three:hover:after{
 }
 
 #button-1 .checkbox:checked + .knobs:before {
-  content: "GIT";
+  content: "REPL";
   left: 42px;
   background-color: #0051ca;
 }
