@@ -1083,18 +1083,18 @@ div.omrs-input-group {
 
 
 .gba-filter-hide {
-  height: 25px;
+  /* height: 25px; */
   background: var(--secondary-color);
-  border-radius: 18px;
+  border-radius: 100px;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 
 }
 
 .bar-text {
   color: var(--font-color) !important;
   font-family: 'Baloo Da' !important;
-  font-size: 26px !important;
+  font-size: 18px !important;
   margin-bottom: 5px;
 }
 
