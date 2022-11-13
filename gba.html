@@ -39,12 +39,64 @@
           <li><a href="index.html" data-bubble="Return!">Home</a></li>
         </ul>
         <main>
-          
+          <p> Feeling Different? Click <a style="cursor:pointer; text-decoration: underline;" onclick="goofyFunnyFeelingDotOrg();">here.</a> (Your Eyes may burn off)</p>
           <p> If replit is blocked for you, please visit settings to change the provider. </p>
           <p>You can do so <a href="settings.html">here</a>. If you want to host your own version easily (and free), then view our guide <a href="info.html">here</a>.</p>
           <p> <a target="_blank" href="https://latebat.me/">Checkout</a> my friend's site, he helped out with some stuff on here behind the scenes! <img style="width: 20px; height: 20px;" src="https://latebat.me/assets/img/hamster.gif"></p>
           <p> Friendly reminder to save your savestates occasionally to your computer or drive, to load in case something happens to your data! (PS: Major site updates soon!)</p>
           <ul id="searchGames">
+            <style>
+              #showN {
+                display: none;
+              }
+              .horizontally {
+               height: 100px;	
+               overflow: hidden;
+               position: relative;
+              }
+              .horizontally .inner {
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               text-align: center;
+               /* Starting position */
+               -moz-transform:translateX(40%);
+               -webkit-transform:translateX(40%);	
+               transform:translateX(40%);
+               /* Apply animation to this element */	
+               -moz-animation: horizontally 5s linear infinite alternate;
+               -webkit-animation: horizontally 5s linear infinite alternate;
+               animation: horizontally 5s linear infinite alternate;
+              }
+              /* Move it (define the animation) */
+              @-moz-keyframes horizontally {
+               0%   { -moz-transform: translateX(40%); }
+               100% { -moz-transform: translateX(-40%); }
+              }
+              @-webkit-keyframes horizontally {
+               0%   { -webkit-transform: translateX(40%); }
+               100% { -webkit-transform: translateX(-40%); }
+              }
+              @keyframes horizontally {
+               0%   { 
+               -moz-transform: translateX(40%); /* Browser bug fix */
+               -webkit-transform: translateX(40%); /* Browser bug fix */
+               transform: translateX(40%); 		
+               }
+               100% { 
+               -moz-transform: translateX(-40%); /* Browser bug fix */
+               -webkit-transform: translateX(-40%); /* Browser bug fix */
+               transform: translateX(-40%); 
+               }
+              }
+              </style>
+            <div id="showN">  
+              <div class="horizontally">
+              <div class="inner">
+              <img src="//www.html.am/images/html-codes/marquees/bee.gif" alt="Buzzy bee">
+              </div>
+              </div>
+            </div>
             <p class="warning"></p>
           <h1>GBA Roms</h1>
           <a href="gba-2.html" class="bar-text">Continued on Page 2</a>
@@ -380,6 +432,7 @@
   <script src="data/js/type.js"></script>
   <script src="user_scripts/theme.js"></script>
   <script src="data/js/favorite.js"></script>
+  <script src="user_scripts/goofy.js"></script>
  
 </html>
 
