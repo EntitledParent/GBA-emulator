@@ -25,13 +25,13 @@ let is1Check = 0;
    
     if (checkType == 1) {
     gameName = gameText;
-    let gameLink = "https://cattn.github.io/gba-host/gba-alt/" + gameName + ".gba";
+    let gameLink = "https://endpoint.i10.repl.co/gba-alt/" + gameName + ".gba";
     gameName = gameLink;
     console.log("gba-server");
     }
     if (checkType == 2) {
     gameName = gameText;
-    let gameLink = "https://cattn.github.io/gba-host/nes-alt/" + gameName + ".nes.zip";
+    let gameLink = "https://endpoint.i10.repl.co/nes-alt/" + gameName + ".nes.zip";
     gameName = gameLink;
     console.log("nes-server");
     }
