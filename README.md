@@ -18,7 +18,9 @@ More games added by the MSG team, and other design changes by the MSG team./
 
 Github profiles:
 [Cattn](https://github.com/cattn)
+
 [Nailington](https://github.com/nailington)
+
 [JavaScythe](https://github.com/javascythe)
 
 
