@@ -5,8 +5,7 @@ gameTypeID = JSON.parse(savedGameTypeID);
 
 function setSegaMDGameName() {
 const gameNameTypeID = 
-['data/roms/Ecco_-_The_Tides_of_Time_(USA).7z',
-'../gba-host/segaMD-alt/6-Pak_(USA).7z',
+['../gba-host/segaMD-alt/6-Pak_(USA).7z',
 '../gba-host/segaMD-alt/688_Attack_Sub_(USA,_Europe).7z',
 '../gba-host/segaMD-alt/ATP_Tour_Championship_Tennis_(USA).7z',
 '../gba-host/segaMD-alt/Aaahh!!!_Real_Monsters_(USA).7z',
