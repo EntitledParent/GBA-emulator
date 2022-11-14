@@ -13,7 +13,13 @@ Any of our games that we host on our server are allowed to be referenced! Please
 
 # GBA Games
 GBA Emulator hosted on my account.
-More games added by me, and other design changes by me.
-Also more games by Nailington
+More games added by the MSG team, and other design changes by the MSG team./
+
+
+Github profiles:
+[Cattn](https://github.com/cattn)
+[Nailington](https://github.com/nailington)
+[JavaScythe](https://github.com/javascythe)
+
 
 [Ultimate Guide to Contributing to the New Emulator!](emulatorjs/docs/UltimateGuide.md)
