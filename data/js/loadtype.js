@@ -9,9 +9,9 @@ let biosName = "null";
 // 3501 - 4500 = N64
 // 4501 - 6000 = Gameboy
 // 6001 - 7000 = Atari 5200
-// 7001 - 8000 = DS
-// 8001 - 9000 = PS1
-// 9001 - 10000 = Sega MD
+// 7001 - 9000 = DS
+// 9001 - 10000 = PS1
+// 10001 - 11000 = Sega MD
 
 savedGameTypeID = localStorage.getItem("gameTypeID");
 gameTypeID = JSON.parse(savedGameTypeID);
