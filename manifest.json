@@ -42,6 +42,16 @@
         "name":"NES Emulator",
         "url":"nes.html",
         "description":"Our NES games"
+    },
+    {
+        "name":"SNES Emulator",
+        "url":"snes.html",
+        "description":"Our SNES games"
+    },
+    {
+        "name":"Sega Genesis Emulator",
+        "url":"segaMS.html",    
+        "description":"Our Sega Genesis games"
     }
 ],
 "categories": [
