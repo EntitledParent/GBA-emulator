@@ -26,49 +26,49 @@
 "screenshots": [
     {
         "src": "pwa/home.png",
-        "sizes": "2560x1440",
+        "sizes": "2559x1440",
         "type": "image/png",
         "description": "A screenshot of the home page"
     },
     {
-        "src": "pwa/advamcewars-emu.png",
-        "sizes": "2560x1440",
+        "src": "pwa/advamcewars.png",
+        "sizes": "2559x1440",
         "type": "image/png",
         "description": "A screenshot of a game"
     },
     {
         "src": "pwa/favi.png",
-        "sizes": "2560x1440",
+        "sizes": "2559x1440",
         "type": "image/png",
         "description": "A screenshot of a favorites list"
     },
     {
         "src": "pwa/testlaunch.png",
-        "sizes": "2560x1440",
+        "sizes": "2559x1440",
         "type": "image/png",
         "description": "A screenshot of the Custom ROM Loader"
     },
     {
         "src": "pwa/old-emu.png",
-        "sizes": "2560x1440",
+        "sizes": "2559x1440",
         "type": "image/png",
         "description": "A screenshot of the old GBA emulator"
     },
     {
         "src": "pwa/themes.png",
-        "sizes": "2560x1440",
+        "sizes": "2559x1440",
         "type": "image/png",
         "description": "A screenshot of the themes page"
     },
     {
         "src": "pwa/green-home.png",
-        "sizes": "2560x1440",
+        "sizes": "2559x1440",
         "type": "image/png",
         "description": "A screenshot of the home page in green"
     },
     {
         "src": "pwa/green-favi.png",
-        "sizes": "2560x1440",
+        "sizes": "2559x1440",
         "type": "image/png",
         "description": "A screenshot of a favorites list in green"
     }
