@@ -5,6 +5,7 @@
         <title>EmulatorJS</title>
         <link rel = icon href = docs/favicon.ico sizes = "16x16 32x32 48x48 64x64" type = image/vnd.microsoft.icon>
         <meta name = viewport content = "width = device-width, initial-scale = 1">
+        <link rel = stylesheet href = user_css/player.css>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS49ZXBGRW"></script>
 <script>
@@ -25,7 +26,6 @@
                 font-weight: bold;
                 font-size: 20px;
                 margin: 0;
-                background-color: #222
             }
         </style>
     </head>
@@ -70,9 +70,10 @@
         </script>
         <script src='data/loader.js'></script>
         <div class="bottom-content">
-            <p style="color:#424242;"> Return <a href="index.html">Home</a></p>
-            <p style="color:#b75d5d; font-weight: bold; font-size: 30px;">Like this game? Star it to find it later! <a href="index_beta.html" onclick="gameStarSelected();">Star me!</a> <input style="width: 200px;" type="text" value="" id="inputText"> <button onclick="copyFunction()">Share Link!</button></p>
+            <p class="heading"> Return <a href="index.html">Home</a></p>
+            <p class="heading">Like this game? Star it to find it later! <a href="index_beta.html" onclick="gameStarSelected();">Star me!</a> <input style="width: 200px;" type="text" value="" id="inputText"> <button onclick="copyFunction()">Share Link!</button></p>
+            <p class="heading"> Remeber to save your games manually too sometimes! </p>
         </div>
     </body>
-    
+    <script src="user_scripts/player-theme.js"></script>
 </html>
