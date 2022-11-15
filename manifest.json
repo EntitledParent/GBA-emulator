@@ -31,7 +31,7 @@
         "description": "A screenshot of the home page"
     },
     {
-        "src": "pwa/advamcewars.png",
+        "src": "pwa/advancewars.png",
         "sizes": "2559x1440",
         "type": "image/png",
         "description": "A screenshot of a game"
@@ -77,33 +77,33 @@
 "shortcuts": [
     {
         "name":"GBA Emulator",
-        "icon":"pwa/manifest-icon-96.png",
         "url":"gba.html",
-        "description":"Our GBA games"
+        "description":"Our GBA games",
+        "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
     },
     {
         "name":"NES Emulator",
-        "icon":"pwa/manifest-icon-96.png",
         "url":"nes.html",
-        "description":"Our NES games"
+        "description":"Our NES games",
+        "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
     },
     {
         "name":"SNES Emulator",
-        "icon":"pwa/manifest-icon-96.png",
         "url":"snes.html",
-        "description":"Our SNES games"
+        "description":"Our SNES games",
+        "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
     },
     {
         "name":"Sega Genesis Emulator",
-        "icon":"pwa/manifest-icon-96.png",
         "url":"segaMS.html",    
-        "description":"Our Sega Genesis games"
+        "description":"Our Sega Genesis games",
+        "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
     },
     {
         "name":"Uplaod ROM",
-        "icon":"pwa/manifest-icon-96.png",
         "url":"testlaunch.html",
-        "description":"Upload your own ROMs"
+        "description":"Upload your own ROMs",
+        "icons": [{ "src": "pwa/manifest-icon-96.png", "sizes": "96x96" }]
     }
 ],
 "categories": [
