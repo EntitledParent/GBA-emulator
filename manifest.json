@@ -52,6 +52,11 @@
         "name":"Sega Genesis Emulator",
         "url":"segaMS.html",    
         "description":"Our Sega Genesis games"
+    },
+    {
+        "name":"Uplaod ROM",
+        "url":"testlaunch.html",
+        "description":"Upload your own ROMs"
     }
 ],
 "categories": [
