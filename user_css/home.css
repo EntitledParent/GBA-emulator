@@ -256,6 +256,13 @@ color: var(--bg-color);
     border: 3px solid #000000;
 }
 
+.snes-emu-tile {
+    width: 600px;
+    height: 70px;
+    background: #e0882a;
+    border: 3px solid #000000;
+}
+
 
 .wrapper-tile-1 {
     float: center;
