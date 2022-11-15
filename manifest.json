@@ -20,7 +20,7 @@
         "src": "pwa/manifest-icon-192.maskable.png",
         "sizes": "192x192",
         "type": "image/png",
-        "purpose": "maskable"
+        "purpose": "any"
     }
 ],
 "screenshots": [
@@ -77,26 +77,31 @@
 "shortcuts": [
     {
         "name":"GBA Emulator",
+        "icon":"pwa/manifest-icon-96.png",
         "url":"gba.html",
         "description":"Our GBA games"
     },
     {
         "name":"NES Emulator",
+        "icon":"pwa/manifest-icon-96.png",
         "url":"nes.html",
         "description":"Our NES games"
     },
     {
         "name":"SNES Emulator",
+        "icon":"pwa/manifest-icon-96.png",
         "url":"snes.html",
         "description":"Our SNES games"
     },
     {
         "name":"Sega Genesis Emulator",
+        "icon":"pwa/manifest-icon-96.png",
         "url":"segaMS.html",    
         "description":"Our Sega Genesis games"
     },
     {
         "name":"Uplaod ROM",
+        "icon":"pwa/manifest-icon-96.png",
         "url":"testlaunch.html",
         "description":"Upload your own ROMs"
     }
