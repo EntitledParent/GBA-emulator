@@ -20,15 +20,57 @@
         "src": "pwa/manifest-icon-192.maskable.png",
         "sizes": "192x192",
         "type": "image/png",
-        "purpose": "any"
+        "purpose": "maskable"
     }
 ],
 "screenshots": [
     {
-        "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
-        "sizes": "2880x1800",
+        "src": "pwa/home.png",
+        "sizes": "2560x1440",
         "type": "image/png",
         "description": "A screenshot of the home page"
+    },
+    {
+        "src": "pwa/advamcewars-emu.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of a game"
+    },
+    {
+        "src": "pwa/favi.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of a favorites list"
+    },
+    {
+        "src": "pwa/testlaunch.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of the Custom ROM Loader"
+    },
+    {
+        "src": "pwa/old-emu.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of the old GBA emulator"
+    },
+    {
+        "src": "pwa/themes.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of the themes page"
+    },
+    {
+        "src": "pwa/green-home.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of the home page in green"
+    },
+    {
+        "src": "pwa/green-favi.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of a favorites list in green"
     }
 ],
 "related_applications": [],
