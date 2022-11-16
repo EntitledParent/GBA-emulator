@@ -111,7 +111,7 @@
     "kids",
     "lifestyle",
     "productivity"
-  ],
+  
 
   "protocol_handlers": [
     {
@@ -131,6 +131,4 @@
       "url": "/segaMD.html"
     }
 ]
-
-
 }
