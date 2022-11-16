@@ -513,3 +513,7 @@ text-decoration: underline;
     color: var(--primary-color);
     /* good enough */
 }
+
+.register-button {
+    padding-right: 75px;
+}
