@@ -120,15 +120,15 @@
     },
     {
       "protocol": "web+nes",
-      "url": "/launchpad.html?gameID=%s&gametitle=%s&fav=%s"
+      "url": "/nes.html"
     },
     {
       "protocol": "web+snes",
-      "url": "/launchpad.html?gameID=%s&gametitle=%s&fav=%s"
+      "url": "/snes.html"
     },
     {
       "protocol": "web+sega",
-      "url": "/launchpad.html?gameID=%s&gametitle=%s&fav=%s"
+      "url": "/segaMD.html"
     }
 ]
 
