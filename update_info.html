@@ -56,53 +56,31 @@
 
     </nav>
     <body>
-        <h2>Welcome to the void. You here often?</h2>
+        <h2>Welcome to the Retro Emulator</h2>
         
         <ul class="menu">
-          <li><a href="index.html" data-bubble="Home...">Return if Online</a></li>
+          <li><a href="index.html" data-bubble="Home...">Return Home</a></li>
         </ul>
-        <h1>You are offline.</h1>
+        <h1> TRYING TO UPDATE YOUR HOST? CLICK <a href="update_info.html">HERE!</a></h1>
+        <h1>Self Host Guide + Info!</h1>
         <main>
-             <h2> You know when you make fun of your friends for having bad wifi? Well that's you right now! Hahahahaha.</h2>
-             <h3> All joking aside, you are OFFLINE! Some pages may still load, but the one you just tried to click on isn't available currently. Check your connection. <br> Clicking the above link may work, but this doesn't mean you are online.</h3>
-             <p>The site may also be blocked, in that case join the discord (Want more games?) to ask for more links and annoy the devs.</p>
-             <p>You probably can't click on the links if you are offline but whatever</p> 
-            
+             <h2> Self Host Update Guide </h2>
+            <h3> Step 1: Github </h3>
+            <p> Go to your Github Repo for gba-host. (Will be at https://github.com/YOURUSERNAME/gba-host/ If you didn't change the name)</p>
+            <img src="data/assets/github_repo.png" alt="Github Repo">
+            <h3> Step 2: Sync Fork </h3>
+            <p> If your fork is not up to date, you will see things like what is circled in red below. Click the Sync fork button. </p>
+            <img src="data/assets/sync_fork.png" alt="Sync Fork">
+            <p> Click the "Update Branch" Button circled below. </p>
+            <img src="data/assets/update_branch.png" alt="Update Branch">
+            <p> Your done! You may have to wait some time for your repo to re-deploy. </p>
+
+
+
+            <h2>For any other questions, please contact Cat.#5172 or join our discord linked below</h2>
+            <a href="https://discord.gg/nZrabh4cgH">Discord</a>
+            </p>
         </main>
-
-        <!-- Reconnect Script -->
-        <script>
-          // Manual reload feature.
-          document.querySelector("button").addEventListener("click", () => {
-            window.location.reload();
-          });
-    
-          // Listen to changes in the network state, reload when online.
-          // This handles the case when the device is completely offline.
-          window.addEventListener('online', () => {
-            window.location.reload();
-          });
-    
-          // Check if the server is responding and reload the page if it is.
-          // This handles the case when the device is online, but the server
-          // is offline or misbehaving.
-          async function checkNetworkAndReload() {
-            try {
-              const response = await fetch('.');
-              // Verify we get a valid response from the server
-              if (response.status >= 200 && response.status < 500) {
-                window.location.reload();
-                return;
-              }
-            } catch {
-              // Unable to connect to the server, ignore.
-            }
-            window.setTimeout(checkNetworkAndReload, 2500);
-          }
-    
-          checkNetworkAndReload();
-        </script>
-
     </body> 
     <script src="user_scripts/theme.js"></script>
 </html>
