@@ -111,13 +111,7 @@
     "kids",
     "lifestyle",
     "productivity"
-  ],
+  ]
 
-  "protocol_handlers": [
-    {
-      "protocol": "web+gba",
-      "url": "/launchpad.html?gameID=%s&gametitle=%s&fav=%s"
-    }
-]
 
 }
