@@ -496,3 +496,20 @@ text-decoration: underline;
         margin-bottom: 3%;
     }
   }
+
+
+.register-real {
+    width: 200px;
+    height: 50px;
+    background: var(--secondary-color);
+    border: 3px solid #000000;
+    font-family: 'Baloo Da';
+    cursor: pointer;
+    color: var(--heading-color);
+}
+
+.register-real:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    /* good enough */
+}
