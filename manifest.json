@@ -111,13 +111,24 @@
     "kids",
     "lifestyle",
     "productivity"
-  ],
+  
 
   "protocol_handlers": [
     {
       "protocol": "web+gba",
       "url": "/launchpad.html?gameID=%s&gametitle=%s&fav=%s"
+    },
+    {
+      "protocol": "web+nes",
+      "url": "/nes.html"
+    },
+    {
+      "protocol": "web+snes",
+      "url": "/snes.html"
+    },
+    {
+      "protocol": "web+sega",
+      "url": "/segaMD.html"
     }
 ]
-
 }

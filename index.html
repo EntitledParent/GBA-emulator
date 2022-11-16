@@ -25,6 +25,7 @@
 <!-- PWA --> 
 <script>navigator.serviceWorker.register("service-worker.js")</script> 
 <link rel="manifest" href="manifest.json">
+<script src="pwa/protocolhandle.js" type="module"></script>
 </head>
 
 <body>
@@ -90,7 +91,6 @@
               
               
             </p>
-              
         </div>
     </div>
     
@@ -133,12 +133,17 @@
       </div>
     </div>
 
-  
-
-
 </div>
+
     </div>
+    
   </div>
+  <div class="center-main">
+    <div class="register-button">
+      <button class="register-real">Register protocol handler</button>
+     </div> 
+</div>
+  
     </body> 
     <script src="user_scripts/theme.js"></script>
 </html>
